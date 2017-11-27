@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta name = "Autora" content = "Cris"/>
+		<title>imágenes.html</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body style="background-color:PeachPuff;font-family:Tw Cen MT"align="center">
+	<h1 align="center" ><u>Formulario 2</u></h1><br><br>
+	
+	<form action="prueba.php" method="post" target="_blank">
+	
+		<label>Nombre: <input size="21px"type="text" name="nombre" maxlength="30"placeholder=" No más de 30 caracteres"></label><br>
+		<label>Apellidos: <input size="20px"type="text" name="apellidos" maxlength="40"placeholder=" No más de 40 caracteres"></label><br>
+		
+		<label>Email: <input size="24px"type="email" name="email"></label><br>
+		<label>Telefono: <input size="21px"max="1997-09-30" pattern="[0-9]*" type="text" name="telefono" maxlength="9"></label><br>
+		<label>Via: <select name="tipo via" size="1">
+			<option id="plaza">Plaza</option>
+			<option id="calle">Calle</option>
+			<option id="carretera">Carretera</option>
+		</select></label>
+		<label><input size="13px"type="text" name="via"placeholder="Nombre via"></label><br>
+		<label>Nº: <input size="2px" type="text" name="numero"maxlength="4"></label>
+		<label>Piso: <input size="1px" pattern="[0-9]*"type="text" name="piso"maxlength="3"></label>
+		<label>Puerta: <input size="1px"type="text" name="puerta"maxlength="3"></label><br>
+		<label>Poblacion: <input size="20px"type="text" name="poblacion"maxlength="20"placeholder="No más de 20 caracteres"></label><br>
+		<label>CP: <input size="26px" pattern="[0-9]*" max="82999"type="text" name="cp"maxlength="5" ></label><br>
+
+		<label>Fecha de nacimiento:
+			<input max="1997-09-30" min="1942-09-15" name="date" type="date" /></label><br>
+		<label>	Rango de Edad: <select name="edad" size="1">
+			<option value="menor">Menor de 18</option>
+			<option value="c">Entre 18 y 35</option>
+			<option value="r">Entre 35 y 55</option>
+			<option value="mayor">Mayor de 55</option>
+		</select></label><br><br>			
+		<p align="center"><label>Password: <input size="21px"type="password" name="contra"></label><br><br><br>
+		<u>CESTA:</u><br><br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<label>Producto1: <input size="16px"type="text" name="producto"placeholder="Nombre"value="Merluza"></label>
+			<label>Peso: <input size="5px"type="text" name="peso"placeholder="kg"value="1.000"></label><br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<label>Producto2: <input size="16px"type="text" name="producto"placeholder="Nombre"></label>
+			<label>Peso: <input size="5pxtype="text" name="peso"placeholder="kg"></label><br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<label>Producto3: <input size="16px"type="text" name="producto"placeholder="Nombre"></label>
+			<label>Peso: <input size="5pxtype="text" name="peso"placeholder="kg"></label><br><br><br>
+		<label>Comentarios:<br><textarea cols=120 rows=10 name="Texto"></textarea><br><br>
+		<INPUT TYPE="checkbox" NAME="notificaciones" VALUE="Si">¿Quiere recibir promociones en el email de contacto?</label>
+		<br><br><INPUT TYPE="submit"><INPUT TYPE="Reset"></p>
+	</form>
+	</body>
+</html>
