@@ -4,44 +4,66 @@
 		<title>imágenes.html</title>
 		<meta charset="utf-8"/>
 	</head>
-	<style>
-		body.{
-			background-color:#BDBDBD;font-family:verdana;align="center;
-		}
-		.enlaces{
-			position: fixed;width: 100%; background-color: #080808;top: 0;
-		}
-	</style>
+    <style>
+        body{
+            background-color:#BDBDBD;font-family: verdana ; align-content: center;
+        }
+        #button {
+                padding: 0;
+             }
+        #button li {
+                display: inline;
+             }
+        #button li a {
+                 font-family: Arial;
+                 font-size: 14px;
+                 text-decoration: none;
+                 float: left;
+                 padding: 19px;
+                 background-color: #080808; 
+                 color: #a39559;
+             }
+        #button li a:hover {
+                 background-color: #3C3B3A;
+                 margin-top: -2;
+                 padding-bottom: 19px;]
+             }
+        .enlaces{
+                position: fixed;width: 100%; background-color: #080808;top: 0;
+        }
+    </style>
 	<body>
-	<div class="enlaces">
-                    <ul id="button">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Sobre nosotros</a></li>
-                        <li><a title="enlace a norte de castilla" target="_blank" href="http://www.elnortedecastilla.es">Periodico</a></li>
-                        <li><a href="formulario2.html">Cuestionario</a></li>
-                        <li><a href="#parrafo">Bajar</a></li>
-                    </ul>
+    <div class="enlaces">
+                <ul id="button">                        
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a title="enlace a norte de castilla" target="_blank" href="http://www.elnortedecastilla.es">Periodico</a></li>
+                    <li><a href="formulario2.html">Cuestionario</a></li>
+                    <li><a href="#parrafo">Bajar</a></li>
+                </ul>
         </div>
-	<h1 align="center" ><u>Formulario 2</u></h1><br><br>
+        <center>
+            <br><br><br>
+	<h1 align="center" id="index"><u>Formulario</u></h1><br><br>
 	
-	<form action="prueba.php" method="post" target="_blank">
+	<form>
 	
 		<label>Nombre: <input size="21px"type="text" name="nombre" maxlength="30"placeholder=" No más de 30 caracteres"></label><br>
 		<label>Apellidos: <input size="20px"type="text" name="apellidos" maxlength="40"placeholder=" No más de 40 caracteres"></label><br>
 		
 		<label>Email: <input size="24px"type="email" name="email"></label><br>
-		<label>Telefono: <input size="21px"max="1997-09-30" pattern="[0-9]*" type="text" name="telefono" maxlength="9"></label><br>
+		<label>Telefono: <input size="21px" pattern="[0-9]*" type="tel" name="telefono" maxlength="9"></label><br>
 		<label>Via: <select name="tipo via" size="1">
 			<option id="plaza">Plaza</option>
 			<option id="calle">Calle</option>
 			<option id="carretera">Carretera</option>
 		</select></label>
 		<label><input size="13px"type="text" name="via"placeholder="Nombre via"></label><br>
-		<label>Nº: <input size="2px" type="text" name="numero"maxlength="4"></label>
-		<label>Piso: <input size="1px" pattern="[0-9]*"type="text" name="piso"maxlength="3"></label>
+		<label>Nº: <input size="2px" type=number name="numero"maxlength="4"></label>
+		<label>Piso: <input size="1px"type=number name="piso"maxlength="3"></label>
 		<label>Puerta: <input size="1px"type="text" name="puerta"maxlength="3"></label><br>
 		<label>Poblacion: <input size="20px"type="text" name="poblacion"maxlength="20"placeholder="No más de 20 caracteres"></label><br>
-		<label>CP: <input size="26px" pattern="[0-9]*" max="82999"type="text" name="cp"maxlength="5" ></label><br>
+		<label>CP: <input size="26px" max="82999"type="number" name="cp"maxlength="5" ></label><br>
 
 		<label>Fecha de nacimiento:
 			<input max="1997-09-30" min="1942-09-15" name="date" type="date" /></label><br>
@@ -63,8 +85,10 @@
 			<label>Producto3: <input size="16px"type="text" name="producto"placeholder="Nombre"></label>
 			<label>Peso: <input size="5pxtype="text" name="peso"placeholder="kg"></label><br><br><br>
 		<label>Comentarios:<br><textarea cols=120 rows=10 name="Texto"></textarea><br><br>
-		<INPUT TYPE="checkbox" NAME="notificaciones" VALUE="Si">¿Quiere recibir promociones en el email de contacto?</label>
-		<br><br><INPUT TYPE="submit"><INPUT TYPE="Reset"></p>
+            <INPUT TYPE="checkbox" NAME="notificaciones" VALUE="Si">¿Quiere recibir promociones en el email de contacto?</label>
+            <br><br><INPUT TYPE="submit"></INPUT><INPUT TYPE="Reset"></INPUT></p>
 	</form>
+        <p id="parrafo">Este es es el parrafo que enlaza el enlace del 3º parrafo. <a title="volver arriba" href="#index" width=80 height=80 border=0>volver arriba</a></p>
+    </center>
 	</body>
 </html>
